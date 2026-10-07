@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기출탭탭 CS 챗봇</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main class="chat">
+    <!-- 헤더 -->
+    <header class="chat-header">
+      <img class="chat-header__icon" src="icon.png" alt="기출탭탭">
+      <div class="chat-header__text">
+        <h1 class="chat-header__title">기출탭탭 CS 챗봇</h1>
+        <p class="chat-header__status"><span class="dot"></span>무엇이든 물어보세요</p>
+      </div>
+    </header>
+
+    <!-- 대화 영역: main.js가 메시지를 그린다 -->
+    <section class="chat-body" id="chatBody" aria-live="polite"></section>
+
+    <!-- 하단 바 -->
+    <footer class="chat-footer">
+      <button type="button" class="footer-btn" id="resetBtn">↺ 처음으로</button>
+      <p class="footer-note">원하는 항목을 선택하면 답변을 받을 수 있어요</p>
+    </footer>
+  </main>
+</body>
+</html>
